@@ -162,13 +162,6 @@ h5 {
     margin:0 auto;
 }
 
-@media (max-width: 800px){
-    .container {
-        max-width: 800px;
-        margin:0 auto;
-    }
-}
-
 h2 {
   font-size: 20px;
 }
@@ -197,8 +190,7 @@ nav {
         height: auto;
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 0px;
-        
+        margin-top: 0px; 
     }
 }
 
@@ -207,7 +199,6 @@ nav a {
   color: black;
   margin: 30px 23px 0 23px;
   font-size: 14px;
-
 }
 
 nav div {
@@ -224,7 +215,13 @@ nav a:hover {
 }
 
 nav a:first-child {
-  margin-left: 0;
+  margin-left: 3px;
+}
+
+@media (max-width: 800px) {
+    nav a {
+        margin: 30px 20px 0 20px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -234,12 +231,14 @@ nav a:first-child {
         justify-content: center;
         margin: 0 auto;
     }
+    
     nav a {
         margin: 0 auto;
     }
-
+    
     nav div a {
         color: silver;
+        font-size: 18px;
         border-bottom: 1px solid black;
         padding-bottom: 15px;
         margin-top: 15px;
@@ -247,8 +246,6 @@ nav a:first-child {
         text-align: center;
        
     }
-
-   
 }
 
 nav img {
@@ -258,8 +255,6 @@ nav img {
 img {
   margin-top: 25px;
 }
-
-
 
 header {
   display: flex;
@@ -276,12 +271,16 @@ header div {
   text-align: center;
   align-items: center;
   margin: 0;
-  width: 47%;
+  width: 45%;
 }
 
 @media (max-width: 800px) {
     header div {
         margin:0 auto;
+    }
+
+    header {
+        height: 400px;
     }
 }
 
@@ -316,24 +315,17 @@ header img {
 
 .section-one {
   margin-top: 35px;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
 }
 
 .section-one div {
-  width: 45%;
+  width: 48%;
   display: flex;
   flex-direction: column;
-  /* height: 100px; */
 }
 
 @media (max-width: 800px) {
-    /* .section-one{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    } */
     .section-one div {
         width: 90%;
         margin: 10px 15px 15px 10px;
@@ -345,11 +337,6 @@ header img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-    }
-    .section-one div {
-        width: 90%;
-        margin: 10px 15px 15px 10px;
     }
 }
 
@@ -362,28 +349,23 @@ header img {
 }
 
 .middle-img {
- width: 100%; 
+ width: 99%; 
  height: auto;
  margin: 38px auto 0 auto;
+ display: flex;
+ justify-content: center;
 }
-
-@media (max-width: 800px) {
-    .middle-img {
-        padding: 0px 10px;
-    }
-}
-
 
 .section-two {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid black;
   margin-top: 25px;
   padding-bottom: 35px;
 }
 
 .section-two div {
-  width: 280px;
+  width: 31%;
   margin-right: 10px;
 }
 
@@ -392,12 +374,6 @@ header img {
 }
 
 @media (max-width: 800px) {
-    /* .section-one{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    } */
     .section-two div {
         width: 90%;
         margin: 10px 15px 15px 10px;
@@ -409,11 +385,6 @@ header img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-    }
-    .section-two div {
-        width: 90%;
-        margin: 10px 15px 15px 10px;
     }
 }
 
@@ -421,13 +392,8 @@ address {
   margin-top: 35px;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-}
-
-@media (max-width: 800px) {
-    address {
-        padding:0 10px;
-    }
+  align-content: space-around;
+  margin-left: 5px;
 }
 
 address div {
@@ -444,7 +410,6 @@ address div span {
 footer {
   width: 100%;
   height: 25px;
-  
 }
 
 footer p {
@@ -457,8 +422,9 @@ footer p {
 footer {
 	text-align: left;
 	margin-top: 50px;
-	
 }
+
+/* CSS for services page below */
 
 main {
 	display: flex;
@@ -468,6 +434,7 @@ main {
 	padding-top: 50px;
 	height: 800px;
 }
+
 main section {
 	width: 47%;
 	border: 1px solid black;
